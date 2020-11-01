@@ -143,6 +143,33 @@ SimpleShell/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/build
 .PHONY : SimpleShell/fast
 
+CodeExamples.o: CodeExamples.c.o
+
+.PHONY : CodeExamples.o
+
+# target to build an object file
+CodeExamples.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/CodeExamples.c.o
+.PHONY : CodeExamples.c.o
+
+CodeExamples.i: CodeExamples.c.i
+
+.PHONY : CodeExamples.i
+
+# target to preprocess a source file
+CodeExamples.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/CodeExamples.c.i
+.PHONY : CodeExamples.c.i
+
+CodeExamples.s: CodeExamples.c.s
+
+.PHONY : CodeExamples.s
+
+# target to generate assembly for a file
+CodeExamples.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/CodeExamples.c.s
+.PHONY : CodeExamples.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -170,6 +197,33 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/main.c.s
 .PHONY : main.c.s
 
+takingInput.o: takingInput.c.o
+
+.PHONY : takingInput.o
+
+# target to build an object file
+takingInput.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/takingInput.c.o
+.PHONY : takingInput.c.o
+
+takingInput.i: takingInput.c.i
+
+.PHONY : takingInput.i
+
+# target to preprocess a source file
+takingInput.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/takingInput.c.i
+.PHONY : takingInput.c.i
+
+takingInput.s: takingInput.c.s
+
+.PHONY : takingInput.s
+
+# target to generate assembly for a file
+takingInput.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/takingInput.c.s
+.PHONY : takingInput.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -179,9 +233,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... SimpleShell"
+	@echo "... CodeExamples.o"
+	@echo "... CodeExamples.i"
+	@echo "... CodeExamples.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... takingInput.o"
+	@echo "... takingInput.i"
+	@echo "... takingInput.s"
 .PHONY : help
 
 

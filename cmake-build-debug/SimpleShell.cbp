@@ -76,7 +76,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/nour/CLionProjects/SimpleShell/CodeExamples.c">
+			<Option target="SimpleShell"/>
+		</Unit>
 		<Unit filename="/home/nour/CLionProjects/SimpleShell/main.c">
+			<Option target="SimpleShell"/>
+		</Unit>
+		<Unit filename="/home/nour/CLionProjects/SimpleShell/takingInput.c">
 			<Option target="SimpleShell"/>
 		</Unit>
 		<Unit filename="/home/nour/CLionProjects/SimpleShell/CMakeLists.txt">

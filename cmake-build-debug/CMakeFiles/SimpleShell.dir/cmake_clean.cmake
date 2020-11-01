@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/SimpleShell.dir/CodeExamples.c.o"
   "CMakeFiles/SimpleShell.dir/main.c.o"
+  "CMakeFiles/SimpleShell.dir/takingInput.c.o"
   "SimpleShell"
   "SimpleShell.pdb"
 )
