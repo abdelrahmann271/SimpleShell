@@ -15,7 +15,7 @@
 //Globals
 char *token;
 char input[BUFFERSIZE];
-
+pid_t bgProcesses[10];
 void readCommand(){
     printf("MyShell>> ");
     fgets(input, BUFFERSIZE, stdin);
@@ -35,14 +35,16 @@ void interrupt_handler(int sig, pid_t child_pid)
     int status;
     //pid_t pid;
     //pid = wait(NULL);
-/*   if(waitpid(child_pid, &status, WNOHANG) != 0) {
+   if(waitpid(child_pid, &status, WNOHANG) != 0) {
         // child process has finished
         printf("child process %d has finished",child_pid);
-    }*/
+    }
+
     //printf("Pid %d exited.\n", pid);
 }
 
 int main() {
+        int noOfbgPRocesses = 0;
         pid_t child_pid;
         int stat_loc;
         int status;
@@ -50,11 +52,28 @@ int main() {
         while (1) {
             //Read Input.
             read:
+            for(int i = 0 ; i < 10 ; i++){
 
-            if(child_pid != 0 && waitpid(child_pid, &status, WNOHANG) != 0) {
-                // child process has finished
-                printf("child process %d has finished\n",child_pid);
+                if(bgProcesses[i] != 0 && waitpid(bgProcesses[i], &status, WNOHANG) != 0) {
+                    // child process has finished
+                    //printf("no of current pro bfore stop %d \n",noOfbgPRocesses);
+                    printf("child process %d has finished\n",bgProcesses[i]);
+                    //printf("ss %d\n",bgProcesses[i]);
+                    noOfbgPRocesses--;
+                    //printf("no of current pro  after stop %d \n",noOfbgPRocesses);
+                    //printf("ss %d\n",noOfbgPRocesses);
+
+                }
+                else if(bgProcesses[i] != 0 ){
+                    printf("child process %d has not finished\n",bgProcesses[i]);
+                }
+/*                if(child_pid != 0 && waitpid(child_pid, &status, WNOHANG) != 0) {
+                    // child process has finished
+                    printf("child process %d has finished\n",child_pid);
+                }*/
+
             }
+
             readCommand();
             int status;
             char **command = malloc(8 * sizeof(char *));
@@ -67,13 +86,7 @@ int main() {
                     //Case of Background Process
                     if(strcmp(token,"&")==0){
                         int status;
-                        //signal(SIGCHLD, interrupt_handler);
-                        //interrupt_handler(status,child_pid);
                         child_pid = fork();
-/*                        if(waitpid(child_pid, &status, WNOHANG) != 0) {
-                            // child process has finished
-                            printf("child process has finished");
-                        }*/
                         if (child_pid == 0) {
                             //Never returns if the call is successful
                             printf("Background Process %d \n",getpid());
@@ -86,7 +99,10 @@ int main() {
                             printf("This won't be printed if execvp is successul\n");
                         }
                         else{
-                            //interrupt_handler(status,child_pid);
+                            bgProcesses[noOfbgPRocesses]=child_pid;
+                            printf("process begin %d\n",bgProcesses[noOfbgPRocesses]);
+                            noOfbgPRocesses++;
+                            printf("no of current processes %d\n",noOfbgPRocesses);
                             sleep(0.5);
                             goto read;
                         }
@@ -103,7 +119,7 @@ int main() {
                     execvp(command[0], command);
                     printf("This won't be printed if execvp is successul\n");
                 } else {
-                    waitpid(child_pid2, &stat_loc, WUNTRACED); //problem
+                    waitpid(child_pid2, &stat_loc, WUNTRACED);
                 }
             }
 
