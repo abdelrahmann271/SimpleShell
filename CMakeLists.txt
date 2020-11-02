@@ -3,4 +3,4 @@ project(SimpleShell C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(SimpleShell main.c CodeExamples.c takingInput.c)
+add_executable(SimpleShell main.c CodeExamples.c takingInput.c try.c multipleProcess.c)

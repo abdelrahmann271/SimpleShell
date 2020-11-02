@@ -21,4 +21,6 @@ errno.h
 -
 string.h
 -
+signal.h
+-
 

@@ -197,6 +197,33 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/main.c.s
 .PHONY : main.c.s
 
+multipleProcess.o: multipleProcess.c.o
+
+.PHONY : multipleProcess.o
+
+# target to build an object file
+multipleProcess.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/multipleProcess.c.o
+.PHONY : multipleProcess.c.o
+
+multipleProcess.i: multipleProcess.c.i
+
+.PHONY : multipleProcess.i
+
+# target to preprocess a source file
+multipleProcess.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/multipleProcess.c.i
+.PHONY : multipleProcess.c.i
+
+multipleProcess.s: multipleProcess.c.s
+
+.PHONY : multipleProcess.s
+
+# target to generate assembly for a file
+multipleProcess.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/multipleProcess.c.s
+.PHONY : multipleProcess.c.s
+
 takingInput.o: takingInput.c.o
 
 .PHONY : takingInput.o
@@ -224,6 +251,33 @@ takingInput.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/takingInput.c.s
 .PHONY : takingInput.c.s
 
+try.o: try.c.o
+
+.PHONY : try.o
+
+# target to build an object file
+try.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/try.c.o
+.PHONY : try.c.o
+
+try.i: try.c.i
+
+.PHONY : try.i
+
+# target to preprocess a source file
+try.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/try.c.i
+.PHONY : try.c.i
+
+try.s: try.c.s
+
+.PHONY : try.s
+
+# target to generate assembly for a file
+try.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/try.c.s
+.PHONY : try.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -239,9 +293,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... multipleProcess.o"
+	@echo "... multipleProcess.i"
+	@echo "... multipleProcess.s"
 	@echo "... takingInput.o"
 	@echo "... takingInput.i"
 	@echo "... takingInput.s"
+	@echo "... try.o"
+	@echo "... try.i"
+	@echo "... try.s"
 .PHONY : help
 
 

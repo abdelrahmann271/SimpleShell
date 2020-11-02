@@ -82,7 +82,13 @@
 		<Unit filename="/home/nour/CLionProjects/SimpleShell/main.c">
 			<Option target="SimpleShell"/>
 		</Unit>
+		<Unit filename="/home/nour/CLionProjects/SimpleShell/multipleProcess.c">
+			<Option target="SimpleShell"/>
+		</Unit>
 		<Unit filename="/home/nour/CLionProjects/SimpleShell/takingInput.c">
+			<Option target="SimpleShell"/>
+		</Unit>
+		<Unit filename="/home/nour/CLionProjects/SimpleShell/try.c">
 			<Option target="SimpleShell"/>
 		</Unit>
 		<Unit filename="/home/nour/CLionProjects/SimpleShell/CMakeLists.txt">

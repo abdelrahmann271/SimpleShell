@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/SimpleShell.dir/main.c.o CMakeFiles/SimpleShell.dir/CodeExamples.c.o CMakeFiles/SimpleShell.dir/takingInput.c.o  -o SimpleShell 
+/usr/bin/cc -g   CMakeFiles/SimpleShell.dir/main.c.o CMakeFiles/SimpleShell.dir/CodeExamples.c.o CMakeFiles/SimpleShell.dir/takingInput.c.o CMakeFiles/SimpleShell.dir/try.c.o CMakeFiles/SimpleShell.dir/multipleProcess.c.o  -o SimpleShell 

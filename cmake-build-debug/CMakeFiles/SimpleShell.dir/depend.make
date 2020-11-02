@@ -5,5 +5,9 @@ CMakeFiles/SimpleShell.dir/CodeExamples.c.o: ../CodeExamples.c
 
 CMakeFiles/SimpleShell.dir/main.c.o: ../main.c
 
+CMakeFiles/SimpleShell.dir/multipleProcess.c.o: ../multipleProcess.c
+
 CMakeFiles/SimpleShell.dir/takingInput.c.o: ../takingInput.c
+
+CMakeFiles/SimpleShell.dir/try.c.o: ../try.c
 
