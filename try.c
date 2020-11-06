@@ -30,3 +30,20 @@ int main(void)
     return 0;
 }
 */
+// C program to Open a File,
+// Write in it, And Close the File
+
+# include <stdio.h>
+/*# include <string.h>
+
+int main( )
+{
+
+    char str[80];
+    strcpy(str, "these ");
+    strcat(str, "strings ");
+    strcat(str, "are ");
+    strcat(str, "concatenated.");
+    printf("%s",str);
+    return 0;
+}*/
