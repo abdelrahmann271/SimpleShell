@@ -4,11 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/nour/CLionProjects/SimpleShell/CodeExamples.c" "/home/nour/CLionProjects/SimpleShell/cmake-build-debug/CMakeFiles/SimpleShell.dir/CodeExamples.c.o"
-  "/home/nour/CLionProjects/SimpleShell/main.c" "/home/nour/CLionProjects/SimpleShell/cmake-build-debug/CMakeFiles/SimpleShell.dir/main.c.o"
-  "/home/nour/CLionProjects/SimpleShell/multipleProcess.c" "/home/nour/CLionProjects/SimpleShell/cmake-build-debug/CMakeFiles/SimpleShell.dir/multipleProcess.c.o"
-  "/home/nour/CLionProjects/SimpleShell/takingInput.c" "/home/nour/CLionProjects/SimpleShell/cmake-build-debug/CMakeFiles/SimpleShell.dir/takingInput.c.o"
-  "/home/nour/CLionProjects/SimpleShell/try.c" "/home/nour/CLionProjects/SimpleShell/cmake-build-debug/CMakeFiles/SimpleShell.dir/try.c.o"
+  "/home/nour/CLionProjects/SimpleShell/main_39.c" "/home/nour/CLionProjects/SimpleShell/cmake-build-debug/CMakeFiles/SimpleShell.dir/main_39.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

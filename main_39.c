@@ -21,14 +21,12 @@ FILE *filePointer ;
 
 
 void readCommand(){
-
     printf("MyShell>> ");
     fgets(input, BUFFERSIZE, stdin);
     while(input[0] == '\n'){
         printf("MyShell>> ");
         fgets(input, BUFFERSIZE, stdin);
     }
-
     // replace new line with \0 (Null Character)
     char *res_search_input = strchr(input, '\n');
     if(res_search_input != NULL){
@@ -39,34 +37,36 @@ void readCommand(){
     }
     token = strtok(input, WHITESPACE);
 }
+
+void logger(pid_t pid){
+    char dataToBeWritten[50]  = "Process Done: " ;
+    char str[100];
+    sprintf(str, "%d", pid);
+    strcat(dataToBeWritten,str);
+    if ( filePointer == NULL )
+    {
+        printf( "file failed to open." ) ;
+    }
+    else
+    {
+        if ( strlen (  dataToBeWritten  ) > 0 )
+        {
+            fputs(dataToBeWritten, filePointer) ;
+            fputs("\n", filePointer) ;
+        }
+    }
+}
 void handler(int sig)
 {
     for(int i = 0 ; i < 10 ; i++){
         if(bgProcesses[i] != 0 && waitpid(bgProcesses[i], &status, WNOHANG) == bgProcesses[i]) {
             //printf("child process %d has finished\n",bgProcesses[i]);
-            char dataToBeWritten[50]
-                    = "Process Done: " ;
-            char str[100];
-            sprintf(str, "%d", bgProcesses[i]);
-            strcat(dataToBeWritten,str);
-            if ( filePointer == NULL )
-            {
-                printf( "file failed to open." ) ;
-            }
-            else
-            {
-                if ( strlen (  dataToBeWritten  ) > 0 )
-                {
-                    fputs(dataToBeWritten, filePointer) ;
-                    fputs("\n", filePointer) ;
-                }
-            }
+            logger(bgProcesses[i]);
             bgProcesses[i] =0;
             noOfbgPRocesses--;
         }
     }
 }
-
 int main() {
     pid_t child_pid;
     int stat_loc;
@@ -85,6 +85,13 @@ int main() {
         }
         int index = 0;
         if(strcmp(token,"exit")==0){
+            //Kill All Childs Processes.
+            for(int i=0; i<noOfbgPRocesses; i++){
+                logger(bgProcesses[i]);
+                if(kill(bgProcesses[i], SIGTERM) == -1 && errno != ESRCH){
+                    exit(EXIT_FAILURE);
+                }
+            }
             fclose(filePointer);
             exit(0);
         }
@@ -100,7 +107,7 @@ int main() {
                         if(execvp(command[0], command)==-1){
                             printf("Error\n");
                         }
-                        printf("This won't be printed if execvp is successul\n");
+                       // printf("Wrong or Unsupported Command\n");
                     }
                     else{
                         bgProcesses[noOfbgPRocesses]=child_pid;
@@ -109,8 +116,8 @@ int main() {
                        // printf("no of current processes %d\n",noOfbgPRocesses);
                         //sleep(0.75);
                         int status1;
-                        if(WIFEXITED(status1))
-                            printf("child exited with = %d\n",WEXITSTATUS(status));
+/*                        if(WIFEXITED(status1))
+                            printf("child exited with = %d\n",WEXITSTATUS(status));*/
 
                         goto read;
                     }
@@ -125,9 +132,10 @@ int main() {
             if (child_pid2 == 0) {
                 //Never returns if the call is successful
                 execvp(command[0], command);
-                printf("This won't be printed if execvp is successul\n");
+                printf("Wrong or Unsupported Command\n");
             } else {
                 waitpid(child_pid2, &stat_loc, WUNTRACED);
+                logger(child_pid2);
                 free(command);
             }
         }

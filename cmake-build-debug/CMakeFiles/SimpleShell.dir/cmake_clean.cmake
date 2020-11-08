@@ -1,9 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/SimpleShell.dir/CodeExamples.c.o"
-  "CMakeFiles/SimpleShell.dir/main.c.o"
-  "CMakeFiles/SimpleShell.dir/multipleProcess.c.o"
-  "CMakeFiles/SimpleShell.dir/takingInput.c.o"
-  "CMakeFiles/SimpleShell.dir/try.c.o"
+  "CMakeFiles/SimpleShell.dir/main_39.c.o"
   "SimpleShell"
   "SimpleShell.pdb"
 )

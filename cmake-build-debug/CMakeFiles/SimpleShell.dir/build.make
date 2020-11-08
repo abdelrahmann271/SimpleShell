@@ -77,90 +77,30 @@ include CMakeFiles/SimpleShell.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/SimpleShell.dir/flags.make
 
-CMakeFiles/SimpleShell.dir/main.c.o: CMakeFiles/SimpleShell.dir/flags.make
-CMakeFiles/SimpleShell.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nour/CLionProjects/SimpleShell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/SimpleShell.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SimpleShell.dir/main.c.o   -c /home/nour/CLionProjects/SimpleShell/main.c
+CMakeFiles/SimpleShell.dir/main_39.c.o: CMakeFiles/SimpleShell.dir/flags.make
+CMakeFiles/SimpleShell.dir/main_39.c.o: ../main_39.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nour/CLionProjects/SimpleShell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/SimpleShell.dir/main_39.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SimpleShell.dir/main_39.c.o   -c /home/nour/CLionProjects/SimpleShell/main_39.c
 
-CMakeFiles/SimpleShell.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SimpleShell.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nour/CLionProjects/SimpleShell/main.c > CMakeFiles/SimpleShell.dir/main.c.i
+CMakeFiles/SimpleShell.dir/main_39.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SimpleShell.dir/main_39.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nour/CLionProjects/SimpleShell/main_39.c > CMakeFiles/SimpleShell.dir/main_39.c.i
 
-CMakeFiles/SimpleShell.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SimpleShell.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nour/CLionProjects/SimpleShell/main.c -o CMakeFiles/SimpleShell.dir/main.c.s
-
-CMakeFiles/SimpleShell.dir/CodeExamples.c.o: CMakeFiles/SimpleShell.dir/flags.make
-CMakeFiles/SimpleShell.dir/CodeExamples.c.o: ../CodeExamples.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nour/CLionProjects/SimpleShell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/SimpleShell.dir/CodeExamples.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SimpleShell.dir/CodeExamples.c.o   -c /home/nour/CLionProjects/SimpleShell/CodeExamples.c
-
-CMakeFiles/SimpleShell.dir/CodeExamples.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SimpleShell.dir/CodeExamples.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nour/CLionProjects/SimpleShell/CodeExamples.c > CMakeFiles/SimpleShell.dir/CodeExamples.c.i
-
-CMakeFiles/SimpleShell.dir/CodeExamples.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SimpleShell.dir/CodeExamples.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nour/CLionProjects/SimpleShell/CodeExamples.c -o CMakeFiles/SimpleShell.dir/CodeExamples.c.s
-
-CMakeFiles/SimpleShell.dir/takingInput.c.o: CMakeFiles/SimpleShell.dir/flags.make
-CMakeFiles/SimpleShell.dir/takingInput.c.o: ../takingInput.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nour/CLionProjects/SimpleShell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/SimpleShell.dir/takingInput.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SimpleShell.dir/takingInput.c.o   -c /home/nour/CLionProjects/SimpleShell/takingInput.c
-
-CMakeFiles/SimpleShell.dir/takingInput.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SimpleShell.dir/takingInput.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nour/CLionProjects/SimpleShell/takingInput.c > CMakeFiles/SimpleShell.dir/takingInput.c.i
-
-CMakeFiles/SimpleShell.dir/takingInput.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SimpleShell.dir/takingInput.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nour/CLionProjects/SimpleShell/takingInput.c -o CMakeFiles/SimpleShell.dir/takingInput.c.s
-
-CMakeFiles/SimpleShell.dir/try.c.o: CMakeFiles/SimpleShell.dir/flags.make
-CMakeFiles/SimpleShell.dir/try.c.o: ../try.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nour/CLionProjects/SimpleShell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/SimpleShell.dir/try.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SimpleShell.dir/try.c.o   -c /home/nour/CLionProjects/SimpleShell/try.c
-
-CMakeFiles/SimpleShell.dir/try.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SimpleShell.dir/try.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nour/CLionProjects/SimpleShell/try.c > CMakeFiles/SimpleShell.dir/try.c.i
-
-CMakeFiles/SimpleShell.dir/try.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SimpleShell.dir/try.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nour/CLionProjects/SimpleShell/try.c -o CMakeFiles/SimpleShell.dir/try.c.s
-
-CMakeFiles/SimpleShell.dir/multipleProcess.c.o: CMakeFiles/SimpleShell.dir/flags.make
-CMakeFiles/SimpleShell.dir/multipleProcess.c.o: ../multipleProcess.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nour/CLionProjects/SimpleShell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/SimpleShell.dir/multipleProcess.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SimpleShell.dir/multipleProcess.c.o   -c /home/nour/CLionProjects/SimpleShell/multipleProcess.c
-
-CMakeFiles/SimpleShell.dir/multipleProcess.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SimpleShell.dir/multipleProcess.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nour/CLionProjects/SimpleShell/multipleProcess.c > CMakeFiles/SimpleShell.dir/multipleProcess.c.i
-
-CMakeFiles/SimpleShell.dir/multipleProcess.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SimpleShell.dir/multipleProcess.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nour/CLionProjects/SimpleShell/multipleProcess.c -o CMakeFiles/SimpleShell.dir/multipleProcess.c.s
+CMakeFiles/SimpleShell.dir/main_39.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SimpleShell.dir/main_39.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nour/CLionProjects/SimpleShell/main_39.c -o CMakeFiles/SimpleShell.dir/main_39.c.s
 
 # Object files for target SimpleShell
 SimpleShell_OBJECTS = \
-"CMakeFiles/SimpleShell.dir/main.c.o" \
-"CMakeFiles/SimpleShell.dir/CodeExamples.c.o" \
-"CMakeFiles/SimpleShell.dir/takingInput.c.o" \
-"CMakeFiles/SimpleShell.dir/try.c.o" \
-"CMakeFiles/SimpleShell.dir/multipleProcess.c.o"
+"CMakeFiles/SimpleShell.dir/main_39.c.o"
 
 # External object files for target SimpleShell
 SimpleShell_EXTERNAL_OBJECTS =
 
-SimpleShell: CMakeFiles/SimpleShell.dir/main.c.o
-SimpleShell: CMakeFiles/SimpleShell.dir/CodeExamples.c.o
-SimpleShell: CMakeFiles/SimpleShell.dir/takingInput.c.o
-SimpleShell: CMakeFiles/SimpleShell.dir/try.c.o
-SimpleShell: CMakeFiles/SimpleShell.dir/multipleProcess.c.o
+SimpleShell: CMakeFiles/SimpleShell.dir/main_39.c.o
 SimpleShell: CMakeFiles/SimpleShell.dir/build.make
 SimpleShell: CMakeFiles/SimpleShell.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nour/CLionProjects/SimpleShell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable SimpleShell"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nour/CLionProjects/SimpleShell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable SimpleShell"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SimpleShell.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/nour/CLionProjects/SimpleShell/main.c
+/home/nour/CLionProjects/SimpleShell/main_39.c
 stdio.h
 -
 sys/types.h

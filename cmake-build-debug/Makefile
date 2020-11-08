@@ -143,140 +143,32 @@ SimpleShell/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/build
 .PHONY : SimpleShell/fast
 
-CodeExamples.o: CodeExamples.c.o
+main_39.o: main_39.c.o
 
-.PHONY : CodeExamples.o
-
-# target to build an object file
-CodeExamples.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/CodeExamples.c.o
-.PHONY : CodeExamples.c.o
-
-CodeExamples.i: CodeExamples.c.i
-
-.PHONY : CodeExamples.i
-
-# target to preprocess a source file
-CodeExamples.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/CodeExamples.c.i
-.PHONY : CodeExamples.c.i
-
-CodeExamples.s: CodeExamples.c.s
-
-.PHONY : CodeExamples.s
-
-# target to generate assembly for a file
-CodeExamples.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/CodeExamples.c.s
-.PHONY : CodeExamples.c.s
-
-main.o: main.c.o
-
-.PHONY : main.o
+.PHONY : main_39.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/main.c.o
-.PHONY : main.c.o
+main_39.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/main_39.c.o
+.PHONY : main_39.c.o
 
-main.i: main.c.i
+main_39.i: main_39.c.i
 
-.PHONY : main.i
-
-# target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/main.c.i
-.PHONY : main.c.i
-
-main.s: main.c.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/main.c.s
-.PHONY : main.c.s
-
-multipleProcess.o: multipleProcess.c.o
-
-.PHONY : multipleProcess.o
-
-# target to build an object file
-multipleProcess.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/multipleProcess.c.o
-.PHONY : multipleProcess.c.o
-
-multipleProcess.i: multipleProcess.c.i
-
-.PHONY : multipleProcess.i
+.PHONY : main_39.i
 
 # target to preprocess a source file
-multipleProcess.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/multipleProcess.c.i
-.PHONY : multipleProcess.c.i
+main_39.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/main_39.c.i
+.PHONY : main_39.c.i
 
-multipleProcess.s: multipleProcess.c.s
+main_39.s: main_39.c.s
 
-.PHONY : multipleProcess.s
-
-# target to generate assembly for a file
-multipleProcess.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/multipleProcess.c.s
-.PHONY : multipleProcess.c.s
-
-takingInput.o: takingInput.c.o
-
-.PHONY : takingInput.o
-
-# target to build an object file
-takingInput.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/takingInput.c.o
-.PHONY : takingInput.c.o
-
-takingInput.i: takingInput.c.i
-
-.PHONY : takingInput.i
-
-# target to preprocess a source file
-takingInput.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/takingInput.c.i
-.PHONY : takingInput.c.i
-
-takingInput.s: takingInput.c.s
-
-.PHONY : takingInput.s
+.PHONY : main_39.s
 
 # target to generate assembly for a file
-takingInput.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/takingInput.c.s
-.PHONY : takingInput.c.s
-
-try.o: try.c.o
-
-.PHONY : try.o
-
-# target to build an object file
-try.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/try.c.o
-.PHONY : try.c.o
-
-try.i: try.c.i
-
-.PHONY : try.i
-
-# target to preprocess a source file
-try.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/try.c.i
-.PHONY : try.c.i
-
-try.s: try.c.s
-
-.PHONY : try.s
-
-# target to generate assembly for a file
-try.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/try.c.s
-.PHONY : try.c.s
+main_39.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleShell.dir/build.make CMakeFiles/SimpleShell.dir/main_39.c.s
+.PHONY : main_39.c.s
 
 # Help Target
 help:
@@ -287,21 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... SimpleShell"
-	@echo "... CodeExamples.o"
-	@echo "... CodeExamples.i"
-	@echo "... CodeExamples.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... multipleProcess.o"
-	@echo "... multipleProcess.i"
-	@echo "... multipleProcess.s"
-	@echo "... takingInput.o"
-	@echo "... takingInput.i"
-	@echo "... takingInput.s"
-	@echo "... try.o"
-	@echo "... try.i"
-	@echo "... try.s"
+	@echo "... main_39.o"
+	@echo "... main_39.i"
+	@echo "... main_39.s"
 .PHONY : help
 
 
