@@ -85,13 +85,13 @@ int main() {
         }
         int index = 0;
         if(strcmp(token,"exit")==0){
-            //Kill All Childs Processes.
+/*            //Kill All Childs Processes.
             for(int i=0; i<noOfbgPRocesses; i++){
                 logger(bgProcesses[i]);
                 if(kill(bgProcesses[i], SIGTERM) == -1 && errno != ESRCH){
                     exit(EXIT_FAILURE);
                 }
-            }
+            }*/
             fclose(filePointer);
             exit(0);
         }
